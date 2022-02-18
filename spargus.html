@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<link rel="icon" href="assets/icon.png">
+		<link href='styles.css' rel="stylesheet">
+		<title>Jak HTML</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles/bootstrap.min.css">
+		<link rel="stylesheet" href="styles/bootstrap-icons.css">
+		<link href="https://fonts.googleapis.com/css2?family=Redressed&family=Syne+Tactile&display=swap" rel="stylesheet">
+	</head>
+
+	<body style="background-color: 192c61">
+
+		<img class="position-absolute w-100 h-100" src="assets/spargus-bg.jpg"; > 
+		<iframe class="hud" src='inventory.html' id=items style="border:5px white;" ></iframe> 
+			
+		<a id='damus' href='damus.html'>
+         	<span class="spButton2">
+         		<h1 style = "position:center; color: #fae591 ">
+         			Visit Damus
+         		</h1>
+         	</span>
+         </a>
+      
+		<a id='temple' href='heart.html'>
+         	<span class="spButton3">
+         		<h1 style = "position:center; color: #fae591 ">
+         			Temple
+         		</h1>
+         	</span>
+         </a>
+
+        <a id='map' href='map.html'>
+         	<span class="spButton4">
+         		<h1 style = "position:center; color: #fae591 ">
+         			Back to Map
+         		</h1>
+         	</span>
+         </a>
+
+	</body>
+
+	<script>
+		 items.src += location.search;
+		 damus.href += location.search;
+		 temple.href += location.search;
+		 map.href += location.search;
+	</script>
+
+
+	</html>

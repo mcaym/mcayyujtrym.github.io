@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="icon" href="assets/icon.png">
+		<link href='styles.css' rel="stylesheet">
+		<title>Jak HTML</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles/bootstrap.min.css">
+		<link rel="stylesheet" href="styles/bootstrap-icons.css">
+		<link href="https://fonts.googleapis.com/css2?family=Redressed&family=Syne+Tactile&display=swap" rel="stylesheet">
+
+	
+	</head>
+	
+	<body style="background-color: #00314F"; >
+		
+		<img class="position-absolute w-100 h-100" src="assets/nest.jpg"; > 
+		<iframe class="hud" src='inventory.html' id=inventory style="border:5px white;" ></iframe>
+
+		<p style="color: white" id='popup'>Final Boss </p>
+		<img id='kor' class="modelKor" src='assets/kor.png' width="480">
+		<img id='jak' class="jakshoot" src='assets/jak-shoot.png' width="480">
+		
+		<h4 style="color: white"> What do you do? </h4>
+		<div id='options'>
+			<button id='shoot' onclick='attack()'> shoot </button>
+			<a id='haven' href='haven.html'>
+				<button id='quit'> Go Back </button>
+			</a>
+		</div>
+
+		<script>
+			inventory.src += location.search;
+			haven.href += location.search;
+			
+			var queryString = new URLSearchParams(location.search);
+			var gp = +queryString.get("gp");
+			var hp = +queryString.get("hp");
+			var ap = +queryString.get("ap");
+			
+			var korHP = 20;
+			var korAP = 2;
+
+			function attack(){
+				korHP -= ap;
+				if (korHP <= 0){
+					queryString.set('hp',hp);
+					inventory.src = 'inventory.html?'+queryString;
+					window.location.href = "ending.html";
+				}
+				else {
+					hp -= korAP
+					queryString.set('hp',hp);
+					inventory.src = 'inventory.html?'+queryString;
+				}
+				if (hp <= 0){
+					options.innerHTML = `<a id='index' href='index.html'>
+								         	<span class="hButton4">
+								         		<h1 style = "position:center; color: #3bb74a  ">
+								         			CLAPPED! Restart Game
+								         		</h1>
+								         	</span>
+								         </a>
+										`
+				}
+			}
+			</script>
+
+	</body>
+</html>

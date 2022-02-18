@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<link rel="icon" href="assets/icon.png">
+		<link href='styles.css' rel="stylesheet">
+		<title>Jak HTML</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles/bootstrap.min.css">
+		<link rel="stylesheet" href="styles/bootstrap-icons.css">
+		<link href="https://fonts.googleapis.com/css2?family=Redressed&family=Syne+Tactile&display=swap" rel="stylesheet">
+		
+	</head>
+	
+	<body style="background-color: 192c61">
+
+			<h1 style="position: center; color:  white; "> Pick a Destination: </h1>
+			
+				<a id='sandover' href='Sandover.html'>
+				 <span class="mButton1">
+		 			<h1 style = "position:center; color:  #00314F ">
+      	 			  Sandover Village 
+      				 </h1>
+      				</span>
+     			 </a>
+      
+			<a id="haven" href="haven.html"> 
+				<span id=havenmap>
+					<h1 style = "position:center;  color:  #00314F "/>Haven City </h1> 	
+       			 </span>
+      		 </a>
+  
+      
+			<a id="spargus" href="Spargus.html"> 
+				<span class="mButton3">
+					<h1 style = "position:center;  color:  #00314F "/>
+	         			Spargus
+	        		</h1>
+	      		</span>
+	      	</a>
+	
+    
+    <iframe class="hud" src='inventory.html' id='inventory'></iframe> 
+	
+
+	<script>
+	 			inventory.src += location.search;
+				sandover.href += location.search; 
+				haven.href += location.search;
+				spargus.href += location.search;
+	</script>
+
+	</body>
+</html>

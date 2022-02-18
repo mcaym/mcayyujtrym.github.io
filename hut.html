@@ -1,0 +1,119 @@
+<html>
+	<head>
+		<link rel="icon" href="assets/icon.png">
+		<link href='styles.css' rel="stylesheet">
+		<title>Jak HTML</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles/bootstrap.min.css">
+		<link rel="stylesheet" href="styles/bootstrap-icons.css">
+		<link href="https://fonts.googleapis.com/css2?family=Redressed&family=Syne+Tactile&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		
+		<video autoplay muted loop id="myVideo">
+		  <source src="assets/hut.mp4" type="video/mp4">
+		</video> 
+
+		<div type='button' class="onlineradio" id="front">
+	    	<img src="images/Radio.jpg" alt="" />
+	    	<p>
+	        	<audio id="yourAudio">
+	           		<source src="assets/samos.mp3" type='audio/mpeg' preload="auto" />
+	        	</audio>
+	       			
+	       			<a id="audioControl">
+	            		<img src="assets/hut-play.png" id="play"/>
+	            		<img src="https://www.wisc-online.com/asset-repository/getfile?id=415&getType=view" id="pause"/>
+	        		</a>
+
+	    	</p>
+		</div>
+
+		<img id=dax src='assets/dax-hut.png'>
+
+			<div type='button' class="onlineradio" id="audiodaxsam">
+	    	<img src="images/Radio.jpg" alt="" />
+	    	<p>
+	        	<audio id="thisAudio">
+	           		<source src="assets/dax-sam.mp3" type='audio/mpeg' preload="auto" />
+	        	</audio>
+	       			<a id="audioControll" href="#">
+	            		<img src="assets/hut-play.png" id="play2"/>
+	            		<img src="assets/hut-pause.png" id="pause2"/>
+	        		</a>
+	    	</p>
+		</div>
+
+		 <a id='sandover' href='sandover.html'>
+         	<span class="sButton4">
+         		<h1 style = "position:center; color: #00314F  ">
+         			Back to Sandover
+         		</h1>
+         	</span>
+         </a>	
+
+	<script type="text/javascript">
+		sandover.href += location.search;
+
+
+		var yourAudio = document.getElementById('yourAudio'),
+		    ctrl = document.getElementById('audioControl'),
+		    playButton = document.getElementById('play'),
+		    pauseButton = document.getElementById('pause');
+
+		function toggleButton() {
+		    if (playButton.style.display === 'none') {
+		        playButton.style.display = 'block';
+		        pauseButton.style.display = 'none';
+		    } else {
+		        playButton.style.display = 'none';
+		        pauseButton.style.display = 'block';
+		    }
+		}
+
+		ctrl.onclick = function () {
+
+		    if (yourAudio.paused) {
+		        yourAudio.play();
+		    } else {
+		        yourAudio.pause();
+		    }
+		    
+		    toggleButton();
+
+		  
+		    return false;
+		};
+
+		var thisAudio = document.getElementById('thisAudio'),
+		    ctrll = document.getElementById('audioControll'),
+		    playButtonn = document.getElementById('play2'),
+		    pauseeButton = document.getElementById('pause2');
+
+		function toggleButton() {
+		    if (playButtonn.style.display === 'none') {
+		        playButtonn.style.display = 'block';
+		        pauseeButton.style.display = 'none';
+		    } else {
+		        playButtonn.style.display = 'none';
+		        pauseeButton.style.display = 'block';
+		    }
+		}
+
+		ctrll.onclick = function () {
+
+		    if (thisAudio.paused) {
+		        thisAudio.play();
+		    } else {
+		        thisAudio.pause();
+		    }
+		    
+		    toggleButton();
+
+		    return false;
+		};
+	</script>
+	</body>
+	</html>

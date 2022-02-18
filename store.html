@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="assets/icon.png">
+			<link href='styles.css' rel="stylesheet">
+			<title>Jak HTML</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="styles/bootstrap.min.css">
+			<link rel="stylesheet" href="styles/bootstrap-icons.css">
+			<link href="https://fonts.googleapis.com/css2?family=Redressed&family=Syne+Tactile&display=swap" rel="stylesheet">
+	</head>
+	<body style="background-color: #192c61">
+		<img class="w-100 h-100" src="assets/store.png"; > 
+
+		<a id='haven' href='haven.html'>
+			<span class="hButton4">
+				<h1 style = "position:center; color: #3bb74a  ">
+					Back to Haven City
+				</h1>
+			</span>
+		</a>
+		
+		<button type="button" onclick='addEco()'>
+			<span class="hButton3">
+				<h1 style = "position:center; color: #3bb74a  ">
+					Trade 10 Orbs for green eco
+				</h1>
+			</span>
+		</button>
+		<hr>
+		
+		<iframe class="hud" src='inventory.html' id=inventory style="border:5px white;" ></iframe>
+		
+		<script> 
+
+			inventory.src += location.search;
+			haven.href += location.search;
+
+			var queryString = new URLSearchParams(location.search);
+			var gp = +queryString.get("gp");
+			var hp = +queryString.get("hp");
+
+
+			function addEco(){
+				if (gp >= 10 ){
+					queryString.set('gp', gp-10);
+					queryString.set('hp', hp+1);
+					location.search = queryString;
+				}
+				else {
+					alert("NOT ENOUGH ORBS FOR PURCHASE.");}
+			}
+
+		</script>
+	</body>
+</html>

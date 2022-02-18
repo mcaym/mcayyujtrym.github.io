@@ -1,0 +1,32 @@
+<html>
+	<head>
+			<link href="https://fonts.googleapis.com/css2?family=Redressed&family=Syne+Tactile&display=swap" rel="stylesheet">
+			<link href='styles.css' rel="stylesheet">
+	</head>
+	<body class="item"  style="background-color: #1f2227;">
+		<p style="color:  white"> Backpack </p>
+		<table>
+			<tr>
+				<td> <img src=assets/orb.png style="width:20px; height:auto;"></td>
+				<td> <img src=assets/green-eco.png style="width:25px; height:auto;"> </td >
+				<td> <img src=assets/ammo.png style="width:15px; height:auto;"> </td > 
+			
+			</tr>
+			<tr>
+				<td id="gp" style="color: white; position: absolute; margin-left: 5px;"> 5 </td>
+				<td id='hp' style="color: white; position: absolute; margin-left: 32px;"> 0 </td>
+				<td id='ap' style="color: white; position: absolute; margin-left: 57px;" >0 </td>
+				
+
+			</tr>
+			</table>
+	<script> 
+			var queryString = new URLSearchParams(location.search);
+			gp.innerText = queryString.get("gp");
+			hp.innerText = queryString.get("hp");
+			ap.innerText = queryString.get("ap");
+	
+			
+	</script>
+	</body>
+<html>

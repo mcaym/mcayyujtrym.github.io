@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="assets/icon.png">
+		<link href='styles.css' rel="stylesheet">
+		<title>Jak HTML</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles/bootstrap.min.css">
+		<link rel="stylesheet" href="styles/bootstrap-icons.css">
+		<link href="https://fonts.googleapis.com/css2?family=Redressed&family=Syne+Tactile&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<img class="position-absolute w-100 h-100" src="assets/Temple.jpg"; > 
+
+
+		<img id=sandhist src='assets/letter.png'>
+		<img id=seal src='assets/seal.png'>	
+		
+		<p id='text'> The House of Mar was the ruling dynasty and royal family in Haven City, made up of the descendants of the city's founder Mar. The House's insignia was the Seal of Mar, indicating royalty. The members of the House ruled over Haven until the line was broken when Damas was betrayed and banished by Baron Praxis. From thereafter Baron Praxis ruled up until his death and was succeeded by his daughter Ashelin Praxis. The House of Mar was never continued, even though Damas did have a son.  </p>
+
+		<a id='obtainheart' href='hint.html'>
+         	<span class="hrtButton">
+         		<h1 style = "position:center; color: #fae591 ">
+         			Bring Mar's Piece to Damus
+         		</h1>
+         	</span>
+         </a>
+
+        <a id='backspargus' href='spargus.html'>
+         	<span class="hrtButton2">
+         		<h1 style = "position:center; color: #fae591 ">
+         			Back to Spargus
+         		</h1>
+         	</span>
+         </a>
+
+         <!-- AUDIO -->
+         <div type='button' class="onlineradio" id="temple-play">
+	    	<img src="images/Radio.jpg" alt="" />
+	    	<p>
+	        	<audio id="yourAudio">
+	           		<source src="assets/precursor.mp3" type='audio/mpeg' preload="auto" />
+	        	</audio>
+	       			<a id="audioControl">
+	            		<img src="assets/bplay.png" id="play"/>
+	            		<img src="assets/bpause.png" id="pause"/>
+	        		</a>
+	    	</p>
+		</div>
+
+
+        <iframe class="hud" src='inventory.html' id='inventory' style="border:5px white;" ></iframe> 
+
+    <script >
+         inventory.src += location.search;
+         obtainheart.href += location.search;
+         backspargus.href += location.search;
+
+         //Audio
+         var yourAudio = document.getElementById('yourAudio'),
+		    ctrl = document.getElementById('audioControl'),
+		    playButton = document.getElementById('play'),
+		    pauseButton = document.getElementById('pause');
+
+		function toggleButton() {
+		    if (playButton.style.display === 'none') {
+		        playButton.style.display = 'block';
+		        pauseButton.style.display = 'none';
+		    } else {
+		        playButton.style.display = 'none';
+		        pauseButton.style.display = 'block';
+		    }
+		}
+
+		ctrl.onclick = function () {
+
+		    if (yourAudio.paused) {
+		        yourAudio.play();
+		    } else {
+		        yourAudio.pause();
+		    }
+		    
+		    toggleButton();
+
+		  
+		    return false;
+		};
+    </script>
+	</body>
+</html>

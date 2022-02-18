@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="assets/icon.png">
+			<link href='styles.css' rel="stylesheet">
+			<title>Jak HTML</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="styles/bootstrap.min.css">
+			<link rel="stylesheet" href="styles/bootstrap-icons.css">
+			<link href="https://fonts.googleapis.com/css2?family=Redressed&family=Syne+Tactile&display=swap" rel="stylesheet">
+	
+	</head>
+	<body>
+		<img class="position-absolute w-100 h-100" src="assets/orb-bg.jpg"; > 
+		<img id='orbs' src="assets/orb-big.png"; > 
+		
+		<div>
+		<p  id="orbtext" style="font-size: 40px;">A precursor is the currency of the world of Jak & Daxter. As time passed after Jak entered the rift that sent him back to the future where he was born and destined to be after growing in sandover, Precursor Orbs became very rare, forcing Jak to Travel back in time to Sandover in order for him to obtain orbs so he can keep up with finances as the eco that needs to fight metalheads is also rare and expensive. Enter the word of advice that Mar's father, Damus, gave to Jak after Jak gave him the Heart of Mar: </p>
+
+		<input style="font-size: 40px;" type="text" id='inputText'>
+		<input id='submit' type="button" value='Submit' onClick="magicWord()">
+
+		</div>
+		<iframe class="hud" src='inventory.html' id='inventory'></iframe> 
+
+		<a style="text-decoration:none" id='sandover' href='sandover.html'>
+         	<span id='orb-page'>
+         		<h1 style = "position:center; color: #9a7956  ">
+         			Back to Sandover
+         		</h1>
+         	</span>
+         </a>
+
+	<script>
+		inventory.src += location.search;
+		sandover.href += location.search; 
+		
+		function magicWord(){
+			var queryString = new URLSearchParams(location.search);
+			var gp = +queryString.get("gp");
+			var hp = +queryString.get("hp");
+			var ap = +queryString.get("ap");
+				
+		function yacow(){
+			document.body.innerHTML = (
+			
+				`<h1>Final Boss</h1>
+				<img src="assets/yacow.png" width="480">
+				<h4> NO WAY OUT. </h4>
+				<audio autoplay>
+				<source src="assets/easter.mp3">
+				</audio>`
+			); 
+		}
+
+				if (inputText.value == "Precursor Madman")
+					{
+					queryString.set('gp', gp+5);
+					location.search = queryString;}
+
+				else if (inputText.value == "REAL BOSS")
+					{
+					yacow()}
+				
+				else {
+					alert("WRONG. NO ORBS GIVEN.");}
+
+				
+}	
+	</script>
+	</body>
+</html>

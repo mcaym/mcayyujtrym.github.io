@@ -1,0 +1,739 @@
+     /* BUTTON FOR START PAGE*/
+    ul {
+       list-style: none;
+           margin: 40px 0;
+    }
+
+    li {
+       float: left;
+
+    }
+
+     /*This will style the buttons*/
+    .buttonStyle {
+      background-color: black;
+       width: 80px;
+       height: 50px;
+       -moz-border-radius: 10px;
+       -webkit-border-radius: 10px;
+       border-color: orange;
+     }
+
+     /*This should make them change their color when they are hovered*/
+     .buttonStyle:hover {
+       background: orange;
+     }
+
+
+/* BUTTON PLACEMENT Bottom right*/
+    .brButton {
+      
+       left:95%;
+       width:80px;
+       height:50px;
+       position: absolute;
+       z-index: 2;
+       background: orange;  -moz-border-radius: 10px;
+       -webkit-border-radius: 10px;
+       border-color: orange;
+       }
+   .brButton:hover {
+       background: brown;
+     }
+
+    /*IMAGE DONT STRETCH*/
+    .center {
+      margin-top: auto;
+      margin-bottom: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 43%;
+    }
+
+/* MAP EDITIONS */
+
+    h1 {
+      text-align: center;
+      font-family: 'Redressed';
+    }
+
+    .mButton1 {
+          
+       top: 15%;
+       left:21.35%;
+       width:300px;
+       height:600px;
+       position: absolute;
+       z-index: 2;
+       color: #fff;
+       background: url(assets/sandover.jpg);  -moz-border-radius: 10px;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color: orange;
+       font-family: 'Redressed';
+    }
+       
+   .mButton1:hover {
+       transition: 0.2s ease-in;
+       filter: brightness(70%);
+    }
+
+   .mButton2 {
+       top: 15%;
+       left:41.35%;
+       width:300px;
+       height:600px;
+       position: absolute;
+       z-index: 2;
+       color: #fff;
+       background: url(assets/haven1.jpg);  -moz-border-radius: 10px;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color: orange;
+       font-family: 'Redressed';
+       }
+
+   .mButton2:hover {
+        transition: 0.2s ease-in;
+        filter: brightness(70%);
+     }
+
+    #havenmap {
+      
+       top: 15%;
+       left:41.35%;
+       width:300px;
+       height:600px;
+       position: absolute;
+       z-index: 2;
+       color: #fff;
+       background: url(assets/haven1.jpg);  -moz-border-radius: 10px;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color: orange;
+       font-family: 'Redressed';
+    }
+
+    #havenmap:hover {
+       transition: 0.2s ease-in;
+       filter: brightness(70%);
+     }
+
+    .mButton3 {
+      
+       top: 15%;
+       left:61.35%;
+       width:300px;
+       height:600px;
+       position: absolute;
+       z-index: 2;
+       color: #fff;
+       background: url(assets/spargus.jpg);  -moz-border-radius: 10px;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color: orange;
+       font-family: 'Redressed';
+       }
+
+    .mButton3:hover {
+       transition: 0.2s ease-in;
+        filter: brightness(70%);
+    }
+
+
+    /*JAK & Daxter HTML EDITIONS*/
+    .modelJak{
+        top: 18%;
+        left:55%;
+        width:600px;
+        height:600px;
+        position: absolute;
+    }
+
+    .modelDax{
+        top: 18%;
+        left:65%;
+        width:300px;
+        height:500px;
+        position: absolute;
+    }
+
+    .modelLetter{
+        top: 10%;
+        left:5%;
+        width:700px;
+        height:700px;
+        position: absolute;
+    }
+
+    .modelLetterText{
+        top: 23%;
+        left:13%;
+        width:400px;
+        font-size: larger;
+        font-family: 'Redressed';
+        position: absolute;
+    }
+
+
+
+    /*SANDOVER EDITIONS*/
+    .sButton1 {
+      
+       top: 25%;
+       left:1%;
+       width:500px;
+       height:100px;
+       position: absolute;
+       z-index: 2;
+       background-color: #cd8932;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color: orange;
+       font-family: 'Redressed';
+       padding-top:25px;
+    }
+   
+    .sButton1:hover {
+       transition: 0.2s ease-in;
+      filter: brightness(70%);
+     }
+
+    .sButton2 {
+       top: 40%;
+       left:1.5%;
+       width:500px;
+       height:100px;
+       position: absolute;
+       z-index: 2;
+       background-color: #cd8932;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color: orange;
+       font-family: 'Redressed';
+       padding-top:25px;
+    }
+
+   .sButton2:hover {
+       transition: 0.2s ease-in;
+        filter: brightness(70%);
+     }
+
+    .sButton3 {   
+       top: 55%;
+       left: 1.5%;
+       width:500px;
+       height:100px;
+       position: fixed;
+       z-index: 2;
+       background-color: #cd8932;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color: orange;
+       font-family: 'Redressed';
+       padding-top:25px;
+    }
+
+    .sButton3:hover {
+       transition: 0.2s ease-in;
+        filter: brightness(70%);
+    }
+    
+    .sButton4 { 
+       top: 75%;
+       left:1.5%;
+       width:500px;
+       height:100px;
+       position: absolute;
+       z-index: 2;
+       background-color: #cd8932;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color: orange;
+       font-family: 'Redressed';
+      padding-top:25px;
+    }
+   
+    .sButton4:hover {
+       transition: 0.2s ease-in;
+        filter: brightness(70%);
+    }
+
+    #history { 
+       top: 85%;
+       left:10%;
+       width:500px;
+       height:100px;
+       position: absolute;
+       z-index: 2;
+       background-color: #cd8932;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color: orange;
+       font-family: 'Redressed';
+       padding-top:25px;
+
+    }
+
+    #history:hover {
+       transition: 0.2s ease-in;
+        filter: brightness(70%);
+    }
+
+    #orb-page {
+       top: 85%;
+       left:1%;
+       width:500px;
+       height:100px;
+       position: absolute;
+       z-index: 2;
+       background-color: #503f2f;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color: orange;
+       font-family: 'Redressed';
+      padding-top:25px;
+    }
+
+    #orb-page:hover {
+       transition: 0.2s ease-in;
+        filter: brightness(70%);
+     }
+
+    .hButton1 {
+       top: 25%;
+       left:1.5%;
+       width:500px;
+       height:100px;
+       position: absolute;
+       z-index: 2;
+       background-color: #435968;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color: #3bb74a;
+       font-family: 'Redressed';
+       padding-top:25px;
+       }
+
+    .hButton1:hover {
+       transition: 0.2s ease-in;
+      filter: brightness(70%);
+    }
+
+    .hButton2 {
+       top: 40%;
+       left:1.5%;
+       width:500px;
+       height:100px;
+       position: absolute;
+       z-index: 2;
+       background-color: #435968;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color: #3bb74a;
+       font-family: 'Redressed';
+       padding-top:25px;
+    }
+
+   .hButton2:hover {
+       transition: 0.2s ease-in;
+       filter: brightness(70%);
+    }
+
+    .hButton3 {
+       top: 55%;
+       left:1.5%;
+       width:500px;
+       height:100px;
+       position: absolute;
+       z-index: 2;
+       background-color:#435968;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color: #3bb74a;
+       font-family: 'Redressed';
+       padding-top:25px;
+       }
+
+    .hButton3:hover {
+       transition: 0.2s ease-in;
+        filter: brightness(70%);
+    }
+
+    .hButton4 {
+       top: 75%;
+       left:1.5%;
+       width:500px;
+       height:100px;
+       position: absolute;
+       z-index: 2;
+       background-color:#435968;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color: #3bb74a;
+       font-family: 'Redressed';
+       padding-top:25px;
+       }
+
+   .hButton4:hover {
+       transition: 0.2s ease-in;
+        filter: brightness(70%);
+    }
+
+
+    .spButton1 {
+      
+       top: 25%;
+       left:1.5%;
+       width:500px;
+       height:100px;
+       position: absolute;
+       z-index: 2;
+       background-color: #635448;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color:#fae591;
+       font-family: 'Redressed';
+       padding-top:25px;
+    }
+
+    .spButton1:hover {
+       transition: 0.2s ease-in;
+      filter: brightness(70%);
+    }
+
+    .spButton2 {
+      
+       top: 40%;
+       left:1.5%;
+       width:500px;
+       height:100px;
+       position: absolute;
+       z-index: 2;
+       background-color: #635448;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color: #fae591;
+       font-family: 'Redressed';
+       padding-top:25px;
+    }
+
+    .spButton2:hover {
+        transition: 0.2s ease-in;
+        filter: brightness(70%);
+    }
+
+    .spButton3 {  
+       top: 55%;
+       left:1.5%;
+       width:500px;
+       height:100px;
+       position: absolute;
+       z-index: 2;
+       background-color:#635448;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color: #fae591;
+       font-family: 'Redressed';
+       padding-top:25px;
+       }
+   
+    .spButton3:hover {
+       transition: 0.2s ease-in;
+        filter: brightness(70%);
+    }
+
+    .spButton4 {
+
+       top: 75%;
+       left:1.5%;
+       width:500px;
+       height:100px;
+       position: absolute;
+       z-index: 2;
+       background-color:#635448;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color: #fae591;
+       font-family: 'Redressed';
+       padding-top:25px;
+    }
+
+    .spButton4:hover {
+       transition: 0.2s ease-in;
+        filter: brightness(70%);
+    }
+
+    .hud{
+        width: 90px;
+        height: 110px;
+        background-color: transparent;
+        position: absolute;
+        margin: -30px auto 0 auto;
+        top: 4%; 
+        left:  94%;
+        -webkit-border-radius: 10px;
+        border:5px white;
+        font-family: 'Redressed';
+    }
+
+    .item{
+      font-family: 'Redressed';
+    }
+
+    #damusb {
+       top: 85%;
+       left:10%;
+       width:500px;
+       height:100px;
+       position: absolute;
+       z-index: 2;
+       background-color: #635448;
+       background-size:  130%;
+       -webkit-border-radius: 10px;
+       border-color: orange;
+       font-family: 'Redressed';
+      padding-top:25px;
+    }
+
+    #history:hover {
+       transition: 0.2s ease-in;
+        filter: brightness(70%);
+    }
+
+    .audioSamos{
+        width: 100px;
+        height: 130px;
+        background-color: transparent;
+        position: absolute;
+        margin: -30px auto 0 auto;
+        top: 4%; 
+        left:  94%;
+        -webkit-border-radius: 10px;
+        border:5px white;
+        font-family: 'Redressed';
+    }
+
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+
+    #audioControl img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #pause {
+        display: none;
+    }
+
+    #front{
+        position:absolute;
+        top: 7%;
+        left: 16%;
+        height: 50px;
+        width: 50px;
+        z-index: 2;
+        -webkit-border-radius: 10px;
+    }
+
+    #dax{
+        top: 40%;
+        left:58%;
+        width:260px;
+        height:450px;
+        position: absolute;
+    }
+
+    #audiodaxsam{
+        position:absolute;
+        top: 50%;
+        left: 61%;
+        height: 50px;
+        width: 50px;
+        z-index: 2;
+         -webkit-border-radius: 10px;
+    }
+
+    #audioControll img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #pause2 {
+        display: none;
+    }
+
+    #sandhist{
+      top: 10%;
+      left:5%;
+      width:700px;
+      height:700px;
+      position: absolute;
+    } 
+
+    #text{
+        top: 22%;
+        left:13%;
+        width:400px;
+        font-family: 'Redressed';
+        position: absolute;
+    }
+
+    #orbs{
+        top:22%;
+        left:15%;
+        width:377px;
+        height:498px;
+        position: absolute;
+    }
+
+    #orbtext{
+        top: 22%;
+        left:35%;
+        width:1000px;
+        font-family: 'Redressed';
+        position: absolute;
+        color: whitesmoke;
+    }
+
+    #inputText{
+        top: 750px;
+        left:51.5%;
+        width:300px;
+        height: 45px;
+        font-family: 'Redressed';
+        position: relative;
+        color: #503f2f;
+        z-index: 2;
+        -webkit-border-radius: 10px;
+    }
+
+    #submit{
+    position:relative;
+    top: 740px;
+    left: 52.5%;
+    height: 45px;
+    width: 100px;
+    -webkit-border-radius: 10px;
+    background-color: #9a7956;
+    font-family: 'Redressed';
+    }
+
+    .modelKor{
+        top: 10%;
+        left:55%;
+        width:800px;
+        height:800x;
+        position: absolute;
+    }
+
+    .jakshoot{
+        top:45%;
+        left:25%;
+        width:330px;
+        height:400px;
+        position: absolute;
+    }
+
+
+    #shoot{
+        position:relative;
+        top: 300px;
+        left: 28%;
+        height: 45px;
+        width: 100px;
+
+        -webkit-border-radius: 10px;
+        background-color: #9a7956;
+        font-family: 'Redressed';
+    }
+
+    #quit{
+        position:relative;
+        top: 300px;
+        left: 30%;
+        height: 45px;
+        width: 100px;
+
+        -webkit-border-radius: 10px;
+        background-color: whitesmoke;
+        font-family: 'Redressed';
+    }
+
+
+
+    .hrtButton {
+        top: 55%;
+        left:70%;
+        width:500px;
+        height:100px;
+        position: absolute;
+        z-index: 2;
+        background-color:#635448;
+        background-size:  130%;
+        -webkit-border-radius: 10px;
+        border-color: #fae591;
+        font-family: 'Redressed';
+        padding-top:25px;
+        }
+
+       .hrtButton:hover {
+            transition: 0.2s ease-in;
+            filter: brightness(70%);
+        }
+
+
+    .hrtButton2 {
+        top: 67%;
+        left:70%;
+        width:500px;
+        height:100px;
+        position: absolute;
+        z-index: 2;
+        background-color:#635448;
+        background-size:  130%;
+        -webkit-border-radius: 10px;
+        border-color: #fae591;
+        font-family: 'Redressed';
+        padding-top:25px;
+    }
+
+    .hrtButton2:hover {
+        transition: 0.2s ease-in;
+        filter: brightness(70%);
+    }
+
+    #seal{
+      top: 43%;
+      left:17%;
+      width:300x;
+      height:300px;
+      position: absolute;
+    } 
+
+
+    #temple-play{
+        position:absolute;
+        top: 68%;
+        left: 31%;
+        height: 50px;
+        width: 50px;
+        z-index: 2;
+        -webkit-border-radius: 10px;
+    }
+
+
+    #bgtext{
+        top: 12%;
+        left:38%;
+        width:470px;
+        font-size: x-large;
+        font-family:'Redressed';
+        position: absolute;
+    }

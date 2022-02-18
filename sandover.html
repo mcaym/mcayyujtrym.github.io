@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<link rel="icon" href="assets/icon.png">
+		<link href='styles.css' rel="stylesheet">
+		<title>Jak HTML</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles/bootstrap.min.css">
+		<link rel="stylesheet" href="styles/bootstrap-icons.css">
+		<link href="https://fonts.googleapis.com/css2?family=Redressed&family=Syne+Tactile&display=swap" rel="stylesheet">
+	</head>
+
+	<body style="background-color: 192c61">
+		<video autoplay muted loop id="myVideo">
+		  <source src="assets/sandover-map.mp4" type="video/mp4">
+		</video> 
+		
+		<iframe class="hud" src='inventory.html' id='inventory' style="border:5px white;" ></iframe> 
+		
+		<<audio src="assets/sandover.mp3" autoplay="autoplay" loop="loop"></audio>
+
+		<a  id='orb' href='orb.html'>
+         	<span class="sButton1">
+         		<h1 style = "position:center; color: #00314F  ">
+         			Collect Orbs
+         		</h1>
+         	</span>
+        </a>	
+		
+		<a  id='hut' href='hut.html'>
+         	<span class="sButton2">
+         		<h1 style = "position:center; color: #00314F  ">
+         			Visit Samos's Hut
+         		</h1>
+         	</span>
+        </a>	
+		
+
+		<a  id='sandhis' href='sandhis.html'>
+         	<span class="sButton3">
+         		<h1 style = "position:center; color: #00314F  ">
+         			Sandover's Importance
+         		</h1>
+         	</span>
+        </a>	
+         	
+        
+        <a style="text-decoration:none" id='map' href='map.html'>
+         	<span class="sButton4">
+         		<h1 style = "position:center; color: #00314F  ">
+         			Back to Map 
+         		</h1>
+         	</span>
+         </a>		
+		
+	 <script>
+	 	 inventory.src += location.search;
+	 	 map.href += location.search;
+	 	 hut.href += location.search;
+	 	 sandhis.href += location.search;
+	 	 orb.href += location.search;
+
+	 	  var queryString = new URLSearchParams(location.search);
+				var gp = +queryString.get("gp");
+				var hp = +queryString.get("hp");
+				var ap = +queryString.get("ap");
+	 </script>
+	 </body>
+
+
+
+</html>
